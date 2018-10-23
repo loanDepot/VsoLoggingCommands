@@ -1,4 +1,4 @@
-function Add-VsoLogFile
+﻿function Add-VsoLogFile
 {
     <#
         .Synopsis

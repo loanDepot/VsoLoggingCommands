@@ -28,7 +28,7 @@ function Set-VsoBuildNumber
     {
         try
         {
-            Write-Vso -Task build.updatebuildnumbe -Text $BuildNumber
+            Write-Vso -Task build.updatebuildnumber -Text $BuildNumber
         }
         catch
         {
