@@ -1,6 +1,6 @@
 # VsoLoggingCommands
 
-PowerShell module that exposes VSO logging commands as cmdlets
+PowerShell module that exposes [VSO logging commands](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/commands.md) as cmdlets.
 
 # Git
 
