@@ -77,7 +77,7 @@ function Write-Vso
             {
                 if ( ![string]::IsNullOrEmpty( $Attributes[$key] ) )
                 {
-                    $stringBuilder.Append((" {1}={0};" -f $key.ToLower(), $Attributes[$key] ) )
+                    [void]$stringBuilder.Append((" {0}={1};" -f $key.ToLower(), $Attributes[$key] ) )
                 }
             }
 
