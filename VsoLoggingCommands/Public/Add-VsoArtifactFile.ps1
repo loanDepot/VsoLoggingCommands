@@ -24,6 +24,7 @@ function Add-VsoArtifactFile
         [String[]]
         $Path,
 
+        # container folder to use
         [Alias('ContainerFolder')]
         [Parameter(
             Mandatory,
@@ -34,6 +35,7 @@ function Add-VsoArtifactFile
         [String]
         $Folder,
 
+        # Name of the artifact
         [Alias('ArtifactName')]
         [Parameter(
             Position = 2,

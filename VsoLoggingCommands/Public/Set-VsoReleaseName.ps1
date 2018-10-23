@@ -10,9 +10,10 @@ function Set-VsoReleaseName
         .Notes
 
     #>
+    [Alias('VsoReleaseName')]
     [cmdletbinding()]
     param(
-        # Parameter help description
+        # Release name
         [Parameter(
             Mandatory,
             Position = 0,

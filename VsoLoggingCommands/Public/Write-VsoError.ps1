@@ -22,15 +22,19 @@ function Write-VsoError
         [String[]]
         $Message,
 
+        # Source file path
         [string]
         $SourcePath,
 
+        # Line number in the file
         [string]
         $LineNumber,
 
+        # column number of the error
         [string]
         $ColumnNumber,
 
+        # Error code
         [string]
         $Code
     )

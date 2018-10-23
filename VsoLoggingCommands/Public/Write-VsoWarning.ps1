@@ -25,15 +25,19 @@ function Write-VsoWarning
         [String[]]
         $Message,
 
+        # Source path of file
         [string]
         $SourcePath,
 
+        # Line number in file
         [string]
         $LineNumber,
 
+        # Column number in file
         [string]
         $ColumnNumber,
 
+        # Error code
         [string]
         $Code
     )

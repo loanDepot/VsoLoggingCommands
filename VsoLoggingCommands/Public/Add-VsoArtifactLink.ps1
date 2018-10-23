@@ -23,6 +23,7 @@ function Add-VsoArtifactLink
         [String]
         $Location,
 
+        # Name of artifact
         [Parameter(
             Mandatory,
             Position = 1,
@@ -32,6 +33,7 @@ function Add-VsoArtifactLink
         [String]
         $Name,
 
+        # type of link
         [Parameter(
             Mandatory,
             Position = 1,

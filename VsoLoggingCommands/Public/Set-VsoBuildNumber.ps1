@@ -13,7 +13,7 @@ function Set-VsoBuildNumber
     [Alias('VsoBuildNumber')]
     [cmdletbinding()]
     param(
-        # Parameter help description
+        # Build number to set
         [Parameter(
             Mandatory,
             Position = 0,

@@ -13,7 +13,7 @@ function Set-VsoProgress
     [Alias('VsoProgress')]
     [cmdletbinding()]
     param(
-        # Parameter help description
+        # Current task
         [Parameter(
             Mandatory,
             Position = 0,
@@ -23,6 +23,7 @@ function Set-VsoProgress
         [String]
         $Message,
 
+        # Percentage complete
         [String]
         $Value
     )

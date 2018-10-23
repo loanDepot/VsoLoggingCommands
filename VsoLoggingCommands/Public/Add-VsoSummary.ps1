@@ -25,11 +25,6 @@ function Add-VsoSummary
         $Path
     )
 
-    begin
-    {
-
-    }
-
     process
     {
         try
@@ -40,10 +35,5 @@ function Add-VsoSummary
         {
             $PSCmdlet.ThrowTerminatingError( $PSItem )
         }
-    }
-
-    end
-    {
-
     }
 }

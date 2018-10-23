@@ -15,7 +15,7 @@ function Write-VsoLogDetail
     #>
     [cmdletbinding()]
     param(
-        # Parameter help description
+        # The message to log
         [Parameter(
             Mandatory,
             Position = 0,

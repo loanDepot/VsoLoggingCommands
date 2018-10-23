@@ -11,7 +11,7 @@ function Set-VsoComplete
         .Notes
 
     #>
-    [Alias('VsoComplete')]
+    [Alias('VsoComplete','VsoStatus','Set-VsoStatus')]
     [cmdletbinding()]
     param(
         # Task complete action
@@ -24,6 +24,7 @@ function Set-VsoComplete
         [string]
         $Message,
 
+        # Set the result of the task
         [VsoResult]
         $Result
     )
