@@ -18,7 +18,8 @@ function Add-VsoAttachment
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipelineByPropertyName
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
         [String]

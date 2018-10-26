@@ -5,15 +5,15 @@ online version:
 schema: 2.0.0
 ---
 
-# Add-VsoLogFile
+# Add-VsoSummaryFile
 
 ## SYNOPSIS
-Upload user interested log to build's container "logs\tool" folder.
+Add summary to status page
 
 ## SYNTAX
 
 ```
-Add-VsoLogFile [-Path] <String[]> [<CommonParameters>]
+Add-VsoSummaryFile [-Path] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -23,18 +23,18 @@ Add-VsoLogFile [-Path] <String[]> [<CommonParameters>]
 
 ### EXAMPLE 1
 ```
-Add-VsoLogFile -Path $Path
+Add-VsoSummary -Path $Path
 ```
 
 ## PARAMETERS
 
 ### -Path
-Parameter help description
+Path to markdown page to use for summary
 
 ```yaml
-Type: String[]
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: FullName
 
 Required: True
 Position: 1
@@ -51,5 +51,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+This needs to be a path to a markdown file
 
 ## RELATED LINKS

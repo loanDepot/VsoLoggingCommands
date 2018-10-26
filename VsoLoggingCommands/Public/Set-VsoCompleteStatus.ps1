@@ -1,32 +1,37 @@
 
-function Set-VsoComplete
+function Set-VsoCompleteStatus
 {
     <#
         .Synopsis
         Finish timeline record for current task, set task result and current operation. When result not provide, set result to succeeded.
 
         .Example
-        Set-VsoComplete -Message $Message
+        Set-VsoCompleteStatus -Message $Message
 
         .Notes
 
     #>
-    [Alias('VsoComplete','VsoStatus','Set-VsoStatus')]
+    [Alias('VsoStatus','Set-VsoStatus')]
     [cmdletbinding()]
     param(
-        # Task complete action
+        # Set the result of the task
         [Parameter(
             Mandatory,
             Position = 0,
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
+        )]
+        [VsoResult]
+        $Status,
+
+        # Task complete action message
+        [Parameter(
+            Position = 1,
             ValueFromPipelineByPropertyName
         )]
         [ValidateNotNullOrEmpty()]
         [string]
-        $Message,
-
-        # Set the result of the task
-        [VsoResult]
-        $Result
+        $Message
     )
 
     process
@@ -34,7 +39,7 @@ function Set-VsoComplete
         try
         {
             Write-Vso -Task task.complete -Text $Message @{
-                Result = $Result
+                Result = $Status
             }
         }
         catch

@@ -28,13 +28,15 @@ function Set-VsoVariable
         [Parameter(
             Mandatory,
             Position = 1,
-            ValueFromPipelineByPropertyName
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
         [String]
         $Value,
 
         # secures this value from logs
+        [Parameter()]
         [switch]
         $IsSecret
     )
