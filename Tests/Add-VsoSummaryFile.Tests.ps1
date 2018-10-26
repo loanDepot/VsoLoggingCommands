@@ -1,7 +1,7 @@
-﻿Describe 'Function Set-VsoComplete' {
+﻿Describe 'Function Add-VsoSummaryFile' {
     Context 'Functionality' {
         It 'does not throw' {
-            Set-VsoComplete complete *>&1 |
+            Add-VsoSummaryFile -Path path *>&1 |
             Should -Not -BeNullOrEmpty
         }
     }

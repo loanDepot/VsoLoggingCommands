@@ -20,24 +20,29 @@ function Write-VsoWarning
         [Parameter(
             Mandatory,
             Position = 0,
+            ValueFromPipelineByPropertyName,
             ValueFromPipeline
         )]
         [String[]]
         $Message,
 
         # Source path of file
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $SourcePath,
 
         # Line number in file
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $LineNumber,
 
         # Column number in file
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $ColumnNumber,
 
         # Error code
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $Code
     )

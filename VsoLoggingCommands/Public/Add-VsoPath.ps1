@@ -16,7 +16,8 @@ function Add-VsoPath
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipelineByPropertyName
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
         [String]

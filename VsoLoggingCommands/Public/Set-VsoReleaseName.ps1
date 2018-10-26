@@ -17,10 +17,10 @@ function Set-VsoReleaseName
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipelineByPropertyName
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
-        [String[]]
+        [String]
         $Name
     )
 

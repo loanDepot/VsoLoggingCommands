@@ -17,24 +17,29 @@ function Write-VsoError
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipeline
+            ValueFromPipeline,
+            ValueFromPipelineByPropertyName
         )]
         [String[]]
         $Message,
 
         # Source file path
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $SourcePath,
 
         # Line number in the file
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $LineNumber,
 
         # column number of the error
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $ColumnNumber,
 
         # Error code
+        [Parameter(ValueFromPipelineByPropertyName)]
         [string]
         $Code
     )

@@ -1,11 +1,11 @@
-function Add-VsoSummary
+function Add-VsoSummaryFile
 {
     <#
         .Synopsis
         Add summary to status page
 
         .Example
-        Add-VsoSummary -Path $Path
+        Add-VsoSummaryFile -Path $Path
 
         .Notes
         This needs to be a path to a markdown file
@@ -18,7 +18,8 @@ function Add-VsoSummary
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipelineByPropertyName
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
         [String]

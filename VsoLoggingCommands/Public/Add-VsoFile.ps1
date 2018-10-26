@@ -18,7 +18,8 @@ function Add-VsoFile
         [Parameter(
             Mandatory,
             Position = 0,
-            ValueFromPipelineByPropertyName
+            ValueFromPipelineByPropertyName,
+            ValueFromPipeline
         )]
         [ValidateNotNullOrEmpty()]
         [String[]]

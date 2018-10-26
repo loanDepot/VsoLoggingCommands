@@ -24,7 +24,13 @@ function Set-VsoProgress
         $Message,
 
         # Percentage complete
-        [String]
+        [Parameter(
+            Position = 1,
+            ValueFromPipeline,
+            ValueFromPipelineByPropertyName
+        )]
+        [ValidateRange(0,100)]
+        [int]
         $Value
     )
 
