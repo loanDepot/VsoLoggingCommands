@@ -8,7 +8,8 @@ $Script:Modules = @(
     'InvokeBuild',
     'Pester',
     'platyPS',
-    'PSScriptAnalyzer'
+    'PSScriptAnalyzer',
+    'DependsOn'
 )
 
 $Script:ModuleInstallScope = 'CurrentUser'
